@@ -1,0 +1,22 @@
+A decltype deduces the type from an expression or variable and assigns it to another variable. An auto has the compiler determine what the type is and initializes a variable.
+A decltype doesn't necessarily need to be initialized. If the operand for the decltype is either an expression or enclosed in parentheses, then decltype returns a reference.
+The only way to return a reference for an auto is if a reference is used or the expression in question returns a reference. Since a decltype might not need to be initialized,
+we can manipulate things a bit more. An auto also won't carry a top-level const unless we deduce it, but a decltype will if the expression is a variable or a reference. This
+lets us more easily carry top-level consts. It does mean that we can't use references as synonyms however. Using a reference in the expression will give us the reference type, 
+not the type of the object attached to it. An auto does let us do that.
+
+Same:
+
+int i = 42, h = 24;
+decltype(i) b = h;
+auto b = h;
+
+Both of these will determine the type of i and apply it to our variable b.
+
+Different:
+
+int i = 42, h = 24;
+decltype(i = h) b = h;
+auto b = h;
+
+The decltype will return int& for b while the auto will just return the type int for b. 

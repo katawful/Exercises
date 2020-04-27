@@ -1,0 +1,8 @@
+Question: Which if any of the following are in error? For the legal ones, explain what they do. For the illegal ones, explain why they're illegal.
+
+(a) vector<vector<int>> ivec;
+This is legal. We are declaring a vector object with type vector<int>.
+(b) vector<string> svec = ivec;
+This is illegal. We cannot assign a vector<string> object to a vector<int> object.
+(c) vector<string> svec(10, "null");
+This is legal. We are creating a vector<string> object svec and initializing it with 10 elements of the string "null"

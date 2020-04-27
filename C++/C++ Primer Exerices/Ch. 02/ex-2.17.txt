@@ -1,0 +1,7 @@
+Question: What does this print? 
+ 
+int i, &ri = i;
+i = 5; ri = 10;
+std::cout << i << " " << ri << std::endl;
+ 
+This would print "10 10". i gets the reference ri. i is assigneed 5, which means ri is 5, but then ri is assigned 10 which means i is now 10

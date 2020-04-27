@@ -1,0 +1,15 @@
+Question: Determine the type and value of each variable:
+
+int a = 3, b = 4;
+decltype(a) c = a;
+decltype(a = b) d = a;
+ 
+a and b are integers
+c is an integer
+d is an int&
+
+a = 3
+b = 4
+c = 3
+d = a???
+d = 3???

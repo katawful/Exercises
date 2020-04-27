@@ -1,0 +1,5 @@
+Question: Is the following code legal? How would you make it legal if not.
+
+int null = 0, *p = null;
+This isn't legal. You can't just assign a value of 0 to a pointer to make it null. What I would do is instead create a constexpr of pointer p that makes it constantly null:
+constexpr int *np = nullptr; 

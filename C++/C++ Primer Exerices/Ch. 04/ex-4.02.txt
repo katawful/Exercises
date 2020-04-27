@@ -1,0 +1,7 @@
+Using the table provided, use parentheses to indicate the order in which the operands are grouped:
+
+(a) * vec.begin()
+(* (vec.begin()))
+
+(b) * vec.begin() + 1
+((* (vec.begin())) + 1)

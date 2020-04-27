@@ -1,0 +1,30 @@
+Question: what would happen to this code if all values input are equal?
+
+#include <iostream>
+int main()
+{
+    // currVal is the number we're counting; we'll read new values into val
+    int currVal = 0, val = 0;
+    // read first number and ensure that we have data to process
+    if (std::cin >> currVal) {
+        int cnt = 1; // store the count for the current value we're processing
+        while (std::cin >> val) { // read the remaining numbers
+            if (val == currVal) // if the values are the same
+                ++cnt; // add 1 to cnt
+            else { // otherwise, print the count for the previous value
+                std::cout << currVal << " occurs " << cnt << " times" << std::endl;
+                currVal = val; // remember the new value
+                cnt = 1; // reset the counter
+            }
+        } // while loop ends here
+        // remember to print the count for the last value in the file
+        std::cout << currVal << " occurs " << cnt << " times" << std::endl;
+    } // outermost if statement ends here
+    return 0;
+}
+
+If all values input were equal then the script would most likely never finish. Say I input 4 1's. The first condition in the while loop will always hold valid until there are no more
+values in the input stream. Once we run out of the values we input, the script would end since now the first condition no longer holds valid, there isn't a valid character set at all.
+The script would end, most likely without error.
+If there are no duplicate values then the script would print only 1 for each value. The first condition in the while loop will never be true so we always go to the next, which ends up
+print cnt as 1 since we set that up before the while loop.

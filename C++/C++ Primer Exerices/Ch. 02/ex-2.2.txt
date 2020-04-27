@@ -1,0 +1,4 @@
+For rate I would use a double since there will be decimals. This will give me more precision, where this is important
+For principal I would either use a short or int depending on the size of it, most likely just an int. Because an integer amount would be given it would most likely be the best option.
+A double however might help with decimal values as the rate is applied.
+For payment I would use an int as well. While there would be decimals in the payment, round that with an integer would still work fine.

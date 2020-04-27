@@ -1,0 +1,5 @@
+Question: What would happen if you were to define the loop control variable in 3.6 as type char?
+
+With the loop control variable being of type char, we wouldn't be able to change the string we are processing. The loop control variable
+just reads each character and assigns it to the loop control variable. We need to directly access the characters in the string by
+referencing them. As a result, if we were to make this change we wouldn't be able to printthe correct output.

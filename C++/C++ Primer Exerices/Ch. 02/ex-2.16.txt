@@ -1,0 +1,11 @@
+Question: Which of the following, if any, are invalid? If valid, explain what they do.
+
+int i = 0, &r1 = i; double d = 0, &r2 = d;
+(a) r2 = 3.14159;
+This is valid, r2 was defined as a double float.
+(b) r2 = r1;
+This is not valid, r1 and r2 are not of the same type.
+(c) i = r2;
+This is technically valid, we can pull the truncated value of r2 for i.
+(d) r1 = d;
+This is not valid. r1 was defined with type integer. 

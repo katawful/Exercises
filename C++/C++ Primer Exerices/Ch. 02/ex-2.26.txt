@@ -1,0 +1,10 @@
+Question: Which of the following are legal? For those that are illegal explain why.
+
+(a) const int buf;
+This is legal.
+(b) int cnt = 0;
+This is legal.
+(c) const int sz = cnt;
+This is legal.
+(d) ++cnt; ++sz;
+This is illegal, sz is a const and you cannot use the increment operator on a const. 

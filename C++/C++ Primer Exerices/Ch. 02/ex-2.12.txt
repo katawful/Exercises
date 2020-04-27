@@ -1,0 +1,12 @@
+Question: Which of the following names, if any, are invalid?
+
+(a) int double = 3.14;
+This is invalid because double is a built-in name
+(b) int _;
+This is valid.
+(c) int catch-22;
+This is invalid since "-" isn't a valid character for an identifier
+(d) int 1_or_2 = 1;
+This is valid.
+(e) double Double = 3.14;
+This is invalid because Double is a built-in name, C++ is not case-sensitive in this case. 

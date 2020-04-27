@@ -1,0 +1,12 @@
+Question: Explain the following definitions. Identify any that are illegal.
+
+(a) int i, *const cp;
+This creates an integer i and a constant pointer cp that points to a non-constant integer.
+(b) int *p1, *const p2;
+This creates a non-constant pointer of type int and a constant integer that points to a non-constant integer.
+(c) const int ic, &r = ic;
+This creates a constant integer ic and a reference to a const r
+(d) const int *const p3;
+This creates a const pointer to a const integer object.
+(e) const int *p;
+This creates a non-const pointer that points to a const integer. 

@@ -1,0 +1,12 @@
+Question: Assume txt_size takes no arguments and return an int value, which of the following are illegal?
+ 
+unsigned buf_size = 1024;
+(a) int ia[buf_size];
+This is legal. 
+(b) int ia[4 * 7 - 14];
+This is legal. 
+(c) int ia[txt_size()];
+This is legal? 
+(d) char st[11] = "fundamental";
+This is illegal. The string literal "fundamental" is 11 characters but since it's a string literal it has an addtional null character.
+The array is only 11 values big.

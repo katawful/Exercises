@@ -1,0 +1,6 @@
+Question: List some drawbacks of using arrays over vectors.
+
+An array is of fixed size and type. Once the size is created, values can't be added to the array unlike vectors.
+Arrays default initialized with built-in types inside a function return undefined values, while vectors do not.
+When list initializing, the list cannot exceed the size of the array. For string literals this becomes a problem wrt to null characters.
+

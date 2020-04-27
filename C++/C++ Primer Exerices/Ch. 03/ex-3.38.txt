@@ -1,0 +1,5 @@
+Question: Why is adding two pointers meaningless?
+
+Pointers point to objects and themselves are just addresses of memory. Trying to add two pointers is trying to add those memory addresses,
+which ends up being a meaningless process.
+We instead want to add the objects that it points to.

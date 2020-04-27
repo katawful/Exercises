@@ -1,0 +1,6 @@
+Question: Is the following range for legal? If so what is the type of c?
+
+const string s = "Keep out!";
+for (auto &c : s) { /* ... */ }
+ 
+This is legal. The type of c is a char reference to the constant string s. However, you cannot change the value of c.

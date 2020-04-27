@@ -1,0 +1,7 @@
+Question: Given that p1 and p2 point to elements in the same array, what does the following code do? Are there values of p1 and p2 that make this code illegal?
+
+p1 += p2 - p1;
+
+This code would compound add the difference in pointer to arrays between p2 and p1 and add it to p1 since they are in the same array.
+This operation would be illegal if p2 is smaller than p1 and the resulting difference would return a value less than 0.
+You can't address a negative pointer to an array even though the code does allow it.

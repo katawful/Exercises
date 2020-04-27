@@ -1,0 +1,10 @@
+Question: What does the following program do?
+
+const char ca[] = {'h', 'e', 'l', 'l', 'o'};
+const char *cp = ca;
+while (*cp) {
+	cout << *cp << endl;
+	++cp;
+}
+
+This program creates a C style string "hello", assigns a pointer to it named cp and reads the string from said pointer.

@@ -1,0 +1,21 @@
+Question: indicate what if any lines are legal. Compile a program with each line to test, correcting any errors
+
+std::cout << "/*";
+	This line is legal. While it uses a start comment pair, it is contained in the string literal that is printed by cout
+	I was correct, it compiled correctly
+std::cout << "*/";
+	This line is legal. It is the same as the last line but instead uses a comment pair end. It is in the string literal
+	I was correct, it compiled correctly
+std::cout << /* "*/" */;
+	This line is legal. It is effectively commenting out the "*/" characters. Removing the comments the line effectively becomes
+	std::cout << ;
+	which should compile
+	I was wrong for this line. I was thinking more literally than what comment pairs actually do
+	What happened is that the first end pair was found and that was the end of the comment. 
+	So in reality the script was not legal
+	I can change this by removing the first end pair brace.
+	I was wrong on that as well. I simply just needed an ending quotation mark right before the semicolon.
+std::cout << /* "*/" /* "/*" */;
+	This line is not legal since it has a comment pair nest. That is not a legal thing
+	I was wrong for this line. Like the last line, I wasn't think how comment pairs actually work.
+	Comment pairs search for the first end brace, no others matter. Because of this there is a valid string literal for cout.

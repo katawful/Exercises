@@ -1,0 +1,13 @@
+Question: What are the values of the following arrays?
+
+string sa[10];
+This is an array of 10 strings with default initialization.
+int ia[10];
+This is an array of 10 ints with default initialization.
+int main() {
+    string sa2[10];
+    This is an array of 10 strings with undefined values, not legal.
+    int    ia2[10];
+    This is an array of 10 ints with undefined values, not legal.
+}
+ 

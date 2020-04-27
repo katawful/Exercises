@@ -1,0 +1,9 @@
+Question: Explain the following defintions. If any are illegal explain why.
+
+int i = 0;
+(a) double *dp = &i;
+This is illegal because we are creating a pointer with a different type from the address we are assigning it 
+(b) int *ip = i;
+This is illegal because we haven't initialize what address the pointer points to. Initializing it with an integer is invalid.
+(c) int *p = &i;
+This is legal. 

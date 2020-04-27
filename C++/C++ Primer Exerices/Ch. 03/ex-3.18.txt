@@ -1,0 +1,10 @@
+Question: Is the following legal? If not how would you fix it?
+
+vector<int> ivec;
+ivec[0] = 42;
+ 
+This isn't legal. ivec is currently empty so you can't use a subscript to assign a value to it. Since we are just assigning the first element in the vector
+I would simply use a push_back operation to add the desired element like so:
+
+vector<int> ivec;
+ivec.push_back(42);

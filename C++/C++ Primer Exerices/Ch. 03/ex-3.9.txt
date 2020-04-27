@@ -1,0 +1,6 @@
+Question: What does this do? Is it valid? If not why?
+
+string s;
+cout << s[0] << endl;
+
+This program doesn't do anything. It isn't valid. It is trying to print a character of a string that doesn't exit, making the statement undefined.

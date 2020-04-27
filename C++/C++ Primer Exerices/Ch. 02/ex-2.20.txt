@@ -1,0 +1,7 @@
+Question: What does this program do?
+
+int i = 42;
+int *p1 = &i;
+*p1 = *p1 * *p1;
+ 
+This program defines the integer i with the value 42, defines and initializes the point p1 with the address of object i, then multiplies the pointer p1 with itself using address i.

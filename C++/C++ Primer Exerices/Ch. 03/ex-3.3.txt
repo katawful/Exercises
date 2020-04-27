@@ -1,0 +1,14 @@
+In the string input operator, whitespace characters are ignored. So if one would write a program block such as the following:
+
+while (cin >> stringInput) {
+	cout << stringInput
+}
+
+and type in "Hello World!" as the input, the output would be "HelloWorld!". Each character is read besides the whitespace character.
+With getline() however, if one were to create a program block like the following:
+
+while (getline(cin, stringInput)) {
+	cout << stringInput
+
+and type in "Hello World!" as the input, the output would be "Hello World!". getline() reads the entire line of input up until a 
+newline character, meaning that whitespace characters are not ignored.

@@ -1,0 +1,12 @@
+Question: is this code fragment legal?
+
+	std::cout << "The sum of " << v1;
+		  << " and " << v2;
+		  << " is " << v1 + v2 << std::endl
+
+I don't believe it is. Each line has a ; which indicates the end of a statement. As is, this code would not compile since the last 2 lines do not have a leading left hand operand, required by the 
+output operator "<<". To fix this I would simply put these two lines at the end of the first statement as follows:
+
+	std::cout << "the sum of " << v1 << " and " << v2 << " is " << v1 + v2 << std::endl;
+
+This way each right hand operands all have a leading left hand operand. This will now compile.

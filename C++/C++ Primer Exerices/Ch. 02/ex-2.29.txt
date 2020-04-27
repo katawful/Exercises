@@ -1,0 +1,14 @@
+Question: Using the variables in the previous question, which of the following assignments are legal? Explain.
+
+(a) i = ic;
+This is legal. We are assigning an object to the value of the const int ic.
+(b) p1 = p3;
+This is legal. We are assigning a non-const pointer to a const pointer that points to a const object.
+(c) p1 = &ic;
+This is legal. We can assign an object to a non-const pointer.
+(d) p3 = &ic;
+This is illegal. p3 is a const pointer and can't change its value.
+(e) p2 = p1;
+This is illegal. p2 is a const pointer and can't change its value.
+(f) ic = *p3;
+This is illegal. ic is a constant object and its value can't change. 

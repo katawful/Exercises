@@ -1,0 +1,14 @@
+Question: explain the following definitions. For illegal definitions explain what's wrong and how to fix it.
+
+(a) std::cin >> int input_value;
+This definition is illegal. Since its a built-in type, the variable being called inside the function cin would lead it to be uninitialized and thus undefined.
+To fix it I would define the variable outside and before the function then call it when we use the cin function.
+(b) int i = { 3.14 };
+This definition is illegal. It uses a list initialization and while it won't be unitialized, the compiler won't compile this variable. The integer value of i is the 
+truncated form of 3.14, a loss of information. To fix it I simply just wouldn't use a list initialization.
+(c) double salary = wage = 9999.99;
+This definition is legal. This isn't called inside a function and is of the built-in types so salary gets initialized with wage, wage get initialized with 9999.99.
+This wouldn't produce the desired results however since salary gets initialized to the uninitialized variable wage. 
+(d) int i = 3.14;
+This definition is legal. The value gets truncated and will compile fine.
+ 

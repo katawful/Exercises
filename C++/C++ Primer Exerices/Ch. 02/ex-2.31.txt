@@ -1,0 +1,10 @@
+Question: Using the previous declarations, explain if these assignments are legal. Explain how top/low-level const applies.
+
+r1 = v2;
+This is illegal, r1 was already initialized to v1. The top-level const won't carry.
+p1 = p2;p1 = p3;p2 = p1;
+The first is legal. The top-level const won't carry over.
+The second is legal. The low-level const will carry over and p1 is non-const.
+The third is legal. The top-level const doesn't get carried so p2 can become non-const
+p2 = p3;
+This is legal. The top-level const from p2 doesn't get carried but the low-level const from p3 does. Since p2 is a non-const it can get converted to a const.

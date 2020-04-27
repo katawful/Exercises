@@ -1,0 +1,18 @@
+You can define a vector and give it 10 elements of value 42 many ways:
+
+First way:
+
+vector<int> v1(10, 42);
+
+Second way:
+
+vector<int> v2;
+for ( i = 1; i <= 10; ++i) {
+	v2.push_back(42);
+
+Third way:
+
+vector<int> v3{42,42,42,42,42,42,42,42,42,42};
+
+Of these, the first way is the best way to solve this issue. It is the simplest in terms of code
+and also leads to less errors from miscounting or creating a for loop wrong.

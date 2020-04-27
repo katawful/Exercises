@@ -1,0 +1,4 @@
+As an example, let's write a program to capitalize the first word of every sentence in the first paragraph of some text.
+We'll assume that our input contains a series of lines.
+Each line is either a complete sentence or it contains only a newline.
+Lines containing a only a newline separate paragraphs. 

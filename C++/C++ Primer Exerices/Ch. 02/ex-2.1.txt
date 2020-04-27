@@ -1,0 +1,8 @@
+An int is usually ued for integer arithmetic and is larger than shorts. Shorts are generally at least 16-bit but ints might be larger. A long is bigger than an int and only used for values
+larger than int. A long long is even larger than a long.
+
+An unsigned type is the full size of the type from 0 to its max. Its used whenever negative values aren't a need. A signed type split the type in half and puts the values from 0 in each direction.
+Generally a compiler will determine where the last number is placed.
+
+A float is single precision (larger gaps between each float value), a double simply has double the values. Doubles are generally preferred to floats due to low overhead cost and much higher 
+precision. 

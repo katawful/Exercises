@@ -1,0 +1,17 @@
+Question: Determine the type for each variable and its value when the code finishes.
+
+int a = 3, b = 4;
+decltype(a) c = a;
+decltype((b)) d = a;
+++c;
+++d;
+ 
+a and b are integers.
+c would be an integer assigned to a
+d would be a reference assigned to a
+
+After the code is done:
+a = 4
+b = 4
+c = 5
+d = 4

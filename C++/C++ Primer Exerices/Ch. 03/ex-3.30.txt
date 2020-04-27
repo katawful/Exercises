@@ -1,0 +1,9 @@
+Question: Identify errors in the following code
+ 
+constexpr size_t array_size = 10;	// array size variable
+int ia[array_size];
+for (size_t ix = 1; ix <= array_size; ++ix)
+      ia[ix] = ix;
+      This is not legal. Indices start at 0 not 1. This will cause unexpected behavior.
+      The array goes up to the index value of 9, not the value of array_size which is 10.
+      The program will likely function to some degree, but it will not work properly.

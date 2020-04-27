@@ -1,0 +1,3 @@
+A point is an object that points to the address of another object, a reference is simply a new name for an existing object, it is not an object itself. A pointer's value can be changed
+and operated on like any object, we can define it uninitialized, and assign it any new value or address. A reference can only be defined with its corresponding object. It is just a new name
+so we can only perform the operations of the type of object we are referencing.

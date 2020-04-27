@@ -1,0 +1,8 @@
+Question: Which of the three approaches do you prefer? Why?
+
+I prefer the ranged for loop approach. It is much more simple compared to a basic for loop and a 
+while loop. The while loop requires an iterator and a comparative object to be created, and 
+functionally it isn't any different from a basic for loop. The basic for loop is a more simple than
+that, but compared to a ranged for loop it is far more complex. The range for loop lets me simply
+just access the required character reference then change it without worrying about the conditions
+to loop.

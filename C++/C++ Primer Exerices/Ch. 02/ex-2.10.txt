@@ -1,0 +1,14 @@
+Question: What are the initial values of the following if any?
+
+std::string global_str;
+The initialized value is and empty string.
+int global_int;
+The initialized value is 0.
+int main()
+{
+int local_int;
+This is uninitialized, the value is undefined.
+std::string local_str;
+The initial value is an empty string.
+}
+ 

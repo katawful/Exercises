@@ -1,0 +1,9 @@
+Question: What is the value of j?
+ 
+int i = 42;
+int main()
+{
+int i = 100;
+int j = i;
+}
+The value of j is 100 since we initialized j with the in scope value of i, 100.

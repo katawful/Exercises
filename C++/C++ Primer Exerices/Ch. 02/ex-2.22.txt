@@ -1,0 +1,4 @@
+Question: Assuming p is a pointer to int, explain the following:
+
+if (p) // This compares the value of pointer p, if it is zero the condition is false
+if (*p) // This compares the address of the object at pointer p

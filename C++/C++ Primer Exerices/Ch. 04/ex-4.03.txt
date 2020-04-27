@@ -1,0 +1,9 @@
+Most binary operators do not have a guaranteed order of evaluation so that the compiler can optimize the code better.
+This presents a trade-off between poor use of a language and efficiently generated code.
+Do you consider this an acceptable tradeoff? Why or why not?
+
+I consider this an acceptable trade-off in some circumstances.
+A good programmer should understand the order of evaluation when writing the code.
+However, I can see how, especially as programs get larger, that putting the expectations on programmers to be 100% correct when writing code can be a lot to ask.
+Having efficient code can be a great thing, but putting the entire expectation on programmers to have perfect code seems rather faulty.
+A compiler should understand that programmers aren't perfect and be able to notify if non-guaranteed order of evaluation is present.

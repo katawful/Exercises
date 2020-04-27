@@ -1,0 +1,4 @@
+Question: What would happen if we didn't initialize the score array in the example problem given?
+
+Arrays defined in a function with default initialization for built-in types are undefined.
+The scores array was defined in the main() function, thus needs to be initialized with something.

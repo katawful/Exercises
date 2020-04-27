@@ -1,0 +1,16 @@
+Question: Determine the types in each of the following then right a program to see if you were right.
+
+const int i = 42;
+auto j = i; const auto &k = i; auto *p = &i;
+const auto j2 = i, &k2 = i;
+ 
+j would be just an int, the top-level const from i isn't carried.
+	right prediction
+k would be a constant reference to the constant object i.
+	right prediction
+p would be a pointer to the non-const object i.
+	wrong prediction, p is a pointer to a constant int, that can't be changed
+j2 would be a constant int.
+	right prediction
+k2 would be a constant reference to the constant object i.
+	right prediction

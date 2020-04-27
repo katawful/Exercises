@@ -1,0 +1,11 @@
+Question: What do these literals represent? What type does each have?
+
+(a) "Who goes with F\145rgus?\012"
+There are two octal escape sequences \145 and \012, this would print "Who goes with Faergus?" then insert a new line
+(b) 3.14e1L
+This is a float literal, it represents 3.14 in non-scientific format. It has the type long double
+(c) 1024f
+This is a float literal, converting a decimal literal with
+(d) 3.14L
+This is a decimal literal with the type long. Represents 3
+ 

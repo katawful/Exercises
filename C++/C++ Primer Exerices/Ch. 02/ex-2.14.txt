@@ -1,0 +1,8 @@
+Question: Is this legal, if so what value does it print?
+
+int i = 100, sum = 0;
+for (int i = 0; i != 10; ++i)
+	sum += i;
+std::cout << i << " " << sum << std::endl;
+
+This is not legal. i is used a variable for the for statement but is defined before it. There would be two variables named i. 

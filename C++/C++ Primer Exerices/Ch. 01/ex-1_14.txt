@@ -1,0 +1,3 @@
+While the two kinds of loops, while and for, are functionally equal, the for loop can be a lot more simple for a lot of cases. If one just wants to get the sum of two ranges there's less 
+reason to use a while loop since its bigger with no change. However, the for loop is rather specific to taking a value within a range and incrementing it. A while loop would allow you to change
+how the loop progresses.

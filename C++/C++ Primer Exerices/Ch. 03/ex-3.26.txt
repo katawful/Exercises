@@ -1,0 +1,10 @@
+Question: In the provided example, why was mid = beg + ( end - beg ) / 2; used instead of mid = ( beg + end ) / 2?
+
+The example binary search program changed the values of end or beg depending on the sought value.
+If end = 10 and beg = 1 then initial mid = 5.
+If the element we want is in the first half, then end = mid = 5 then the function in question runs.
+
+For the function used: mid = 1 + ( 5 - 1 ) / 2 = 2
+For the function not used: mid = ( 1 + 5 ) / 2 = 3
+
+Using the supplied example, the midpoint ends up being truncated past the numerical midpoint. The function used gives us the value more appropriate for the midpoint.

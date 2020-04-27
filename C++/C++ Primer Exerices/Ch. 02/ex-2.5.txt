@@ -1,0 +1,11 @@
+Question: determine the types of these literals, explain the differences inside each.
+
+(a) 'a', L'a', "a", L"a"
+The first is a character literal, with the default type. The second is a character literal, with a wide character type. The third is a string literal, with the default type.
+The last is a string literal, with a wide character type.
+(b) 10, 10u, 10L, 10uL, 012, 0xC
+The first 4 are all decimal literals, with the default type, unsigned type, long type, and unsigned long types. The fifth is an octal literal and the last is a hexidecimal literal.
+(c) 3.14, 3.14f, 3.14L
+These are all float literals, the first is default type, the second is of the type float/single precision, and the last is of the long double type.
+(d) 10, 10u, 10., 10e-2
+The first 2 are decimal literals, the first being default type and the second being the unsigned type. The third is a float literal with default type while the last is also a float literal

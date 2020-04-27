@@ -1,0 +1,7 @@
+Quetion: what does the following for loop do?
+
+int sum = 0;
+for (int i = -100; i <= 100; ++i)
+sum += i;
+
+This for loop finds the sum of values between -100 and 100 inclusive

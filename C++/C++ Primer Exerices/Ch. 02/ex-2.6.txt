@@ -1,0 +1,6 @@
+Question: what's the difference if any between the two definitions?
+
+int month = 9, day = 7;
+int month = 09, day = 07;
+ 
+The first definition is defining the objects as decimal literals whereas the second is defining them as octal literals. The 0 before a number defines it as an octal literal.

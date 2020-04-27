@@ -1,0 +1,22 @@
+Question: How many elements are in the following vectors? What are the values?
+
+(a) vector<int> v1;
+This has no elements.
+
+(b) vector<int> v2(10);
+This has 10 elements with the default value.
+
+(c) vector<int> v3(10, 42);
+This has 10 elements with each having the value of 42.
+
+(d) vector<int> v4{10};
+This has one element of value 10.
+
+(e) vector<int> v5{10, 42};
+This has 2 elements of value 10 and 42.
+
+(f) vector<string> v6{10};
+This has 10 elements of the default value.
+
+(g) vector<string> v7{10, "hi"};
+This has 10 elements, each with the value of "hi". 

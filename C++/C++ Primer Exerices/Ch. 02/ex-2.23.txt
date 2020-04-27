@@ -1,0 +1,2 @@
+We can't determine if pointer p points to a valid object because we can't perform any operations on p. If we could, we could compare it to known value or just print it.
+An invalid pointer always returns undefined values.

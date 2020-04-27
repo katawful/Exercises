@@ -1,0 +1,10 @@
+Question: Which definitions, if any, are invalid?
+
+(a) int ival = 1.01;
+This is valid, albeit truncated.
+(b) int &rval1 = 1.01;
+This is invalid, you can't define a reference to a literal.
+(c) int &rval2 = ival;
+This is valid.
+(d) int &rval3;
+This is invalid, a reference must be initialized to another object. 

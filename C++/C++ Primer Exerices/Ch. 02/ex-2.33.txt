@@ -1,0 +1,26 @@
+Question: Using the declarations from this section, what would happen with each assignment?
+
+a = 42; 
+a would get set to 42. a is assigned to r which is a reference to the integer i.
+b = 42; 
+b would get assigned to 42. It is assigned to the const int ci, but the top level const is not carried.
+c = 42;
+c cannot be set. It is assigned to a constant reference cr and that is low-level thus carried.
+d = 42; 
+d would get assigned to 42. It is assigned to the int* i.
+2.34 update: d can't get assigned since it is an int* and not an int
+e = 42; 
+e cannot be assigned. It is assigned to the constant integer ci, a low-level const.
+g = 42;
+g cannot be set, it is a constant integer. 
+
+
+Assignments and declarations
+
+int i = 0, &r = i;
+auto a = r; // a is an int (r is an alias for i, which has type int)
+auto b = ci; // b is an int (top-level const in ci is dropped)
+auto c = cr; // c is an int (cr is an alias for ci whose const is top-level)
+auto d = &i; // d is an int*(& of an int object is int*)
+auto e = &ci; // e is const int*(& of a const object is low-level const)
+auto &g = ci; // g is a const int& that is bound to ci
