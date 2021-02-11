@@ -1,0 +1,10 @@
+What is the value of ~'q' << 6 assuming 32-bit ints and that the character literal 'q' has the 8 bit value of 01110001?
+
+1) ~'q' = ~(01110001) = 10001110
+
+2) 10001110 << 6 = 00000000000000000000000010001110 << 6 = 00000000000000000010001110000000
+
+The value would be 10001110000000 or 9088 in decimal
+
+Update: I was wrong. The value gets promoted before the bitwise NOT operation.
+This would lead us to bitwise shift left a negative value which is undefined

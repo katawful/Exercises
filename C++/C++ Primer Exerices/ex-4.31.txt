@@ -1,0 +1,7 @@
+A postfix increment/decrement would end up trying to evaluate an invalid object.
+The postfix increment/decrement does that but returns the unchanged value.
+This would lead to the program trying to evaluate the size of an object that's smaller than it actually is.
+This would fail.
+You would have to increase the value of ivec.size so that we can finish the program.
+
+

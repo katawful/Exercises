@@ -1,0 +1,22 @@
+Explain the following for loops. Correct any mistakes:
+
+a) 
+for (int ix = 0; ix != sz; ++ix) (/*...*/}
+if (ix != sz)
+
+This loop prefix increments ix until the value of ix is equal to sz.
+The if statement cannot work however since ix was initialized in the for header.
+Initialize ix above the for loop to fix it.
+
+b)
+int ix;
+for (ix != sz; ++ix) {/*...*/}
+
+This for loop iterates until ix is equal to sz.
+The header is wrong however, its missing a component. 
+The initialize component needs to be a null statement, add a ; before ix != sz
+
+c)
+for (int ix = 0; ix != sz; ++ix, ++ sz) {/*...*/}
+
+This loop Iterates 

@@ -1,0 +1,30 @@
+Correct the errors in the provided coded:
+
+a) This code never contains any breaks after each case.
+This means that the code will try to process each case even if they don't match.
+This means that the default case will always run.
+To fix this add a break statement in-between each case like so:
+
+...
+switch (ch) {
+	case 'a': aCnt++; break;
+	case 'e': eCnt++; break;
+	default: iouCnt++; break;
+}
+
+b) This script is illegal.
+The second case in the switch is trying to set a value of ix that isn't in scope.
+To fix it, initialize the respective value outside of the switch like so:
+
+...
+int ix = get_value();
+switch (index){
+	case 1:
+		ivec[ix] = index;
+		break;
+	default:
+		ix = ivec.size() - 1;
+		ivec[ix] = index;
+}
+
+c) 

@@ -1,0 +1,23 @@
+Question: What does overflow mean? Show 3 examples that will overflow
+
+Overflow is when a value of a certain type exceeds its limits on either end.
+In arithmetic types, there are limits for every type.
+
+Examples:
+
+1)
+short x = 32767;
+x += 1;
+
+This overflows as the maximum value of a signed short is 32767
+
+2)
+unsigned int x = 0;
+x -= 1;
+
+This overflows as the minimum value of an unsigned int is 0
+
+3)
+short x = 30000
+x = x * 3000
+This overflows as it exceeds the maximum size of a signed short

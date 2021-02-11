@@ -1,0 +1,5 @@
+What would have happened in the grading example if an unsigned int was used for quiz1?
+
+An unsigned long was used since unsigned int is a 16 bit value. 
+The example needed at least 30 bits which an unsigned long needs. 
+This example just wouldn't even be possible, left shifting by 27 values would just not do anything at all as we would shift past the total number of bits and make the values 0.

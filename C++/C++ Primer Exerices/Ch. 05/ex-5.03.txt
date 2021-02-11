@@ -1,0 +1,13 @@
+Original:
+while ( val <= 10 ) {
+	sum += val;
+	++val;
+}
+
+Modified:
+while (val <= 10, sum += val, ++val)
+	;
+
+This change improves the readability of the code in this case.
+Since we weren't doing a lot within this while loop, it makes sense to put it inside the () with the comma operator.
+

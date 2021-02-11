@@ -1,0 +1,6 @@
+Explain the following expression:
+
+double slope = static_cast<double>(j/i);
+
+This expression is taking the expression j/i and converting its operands to type double.
+This will let us store the result into a double while retaining the information that would have been truncated by an int type j/i

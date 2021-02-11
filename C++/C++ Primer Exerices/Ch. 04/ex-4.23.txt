@@ -1,0 +1,15 @@
+The following expression fails to compile due to operator precedence. Explain why it fails. How would you fix that?
+
+string s = "word";
+string pl = s + s[s.size() - 1] == 's' ? "" : "s";
+
+This fails because you are trying to compare as string to a character. 
+Due to precedence, s + s[s.size() - 1] will work before the conditional right after.
+It won't compile because the types aren't the same.
+
+To fix this some parenthesese will be needed:
+
+string s = "word";
+string pl = s + ((s[s.size() - 1] == 's') ? "" : "s");
+
+This will compare the proper elements and keep the conditional in a place that can be safely combined to the original string.

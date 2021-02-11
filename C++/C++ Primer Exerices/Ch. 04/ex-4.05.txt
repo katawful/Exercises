@@ -1,0 +1,10 @@
+Determine the result of the following expresisons:
+
+a) -30 * 3 + 21 / 5
+The result would be -90 + 4 = -86
+b) -30 + 3 * 21 / 5
+The result would be -30 + 63 / 5 = -30 + 12 = -18
+c) 30 / 3 * 21 % 5
+The result would be 10 * 21 % 5 = 210 % 5 = 0
+d) -30 / 3 * 21 % 4
+The result would be -10 * 21 % 4 = -210 % 4 = 2

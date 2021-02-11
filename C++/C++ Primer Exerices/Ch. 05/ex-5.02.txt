@@ -1,0 +1,2 @@
+A block is a series of statements and declarations enclosed by {}.
+It is used for things like for loops in which multiple statements are required.

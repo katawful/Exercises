@@ -1,0 +1,4 @@
+A dangling else is an else that doesn't go to the corresponding if that is intended.
+This results in things not working as expected, the else could be for any if statement.
+These can be resolved by using proper indenting for the level of if blocks needed, and to always enclose if statements in curly braces even if not strictly needed.
+Both of these will help to eliminate dangling else's

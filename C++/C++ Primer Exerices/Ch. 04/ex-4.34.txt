@@ -1,0 +1,12 @@
+Explain the conversions that take place.
+
+a) if (fval)
+fval is converted to a bool
+
+b) dval = fval + ival;
+ival is converted to a float.
+The result is converted to a double
+
+c) dval + ival * cval;
+cval is converted to an int.
+The result of ival * cval is then converted to a double.

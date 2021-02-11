@@ -1,0 +1,11 @@
+Question: The following assigment is illegal. Why? How would you correct it?
+
+double dval; int ival; int *pi;
+dval = ival = pi = 0
+
+This is illegal because we are attempting to assign an int to a pointer to an int. They both can take the literal value of 0.
+To fix this I would do something like this:
+
+dval = ival = 0; pi = 0
+
+We can assign a double to the value of an int and the pointer to an int pi will get assigned its own value.

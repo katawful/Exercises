@@ -1,0 +1,5 @@
+Question: Assuming i, j, and k are all ints, what does i != j < k mean?
+
+This condition checks if i is not less than j, but if the bool result of i != j is less than the value of k.
+As i != j gets converted to a bool, if the condition succeeds it will return 1.
+k must be bigger than 1 if the full condition were to succeed.

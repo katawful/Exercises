@@ -1,0 +1,11 @@
+Question: Explain the difference between prefix and postfix increment/decrement
+
+Prefix increment/decrement change the value then return the changed value.
+int i = 0;
+++i;
+This increment would return 1.
+
+Postfix increment/decrement change the value but return the unchanged value.
+int i = 0;
+i++;
+This increment would return 0.

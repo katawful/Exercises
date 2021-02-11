@@ -1,0 +1,3 @@
+Rewrite i *= d so that it does integral multiplication:
+
+i *= static_cast<int>(d)

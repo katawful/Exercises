@@ -1,0 +1,2 @@
+A null statement is simply a line of code with just a semicolon ;.
+It can be useful if the programmer just needs to have a while loop evaluate a statement until a certain point

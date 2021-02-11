@@ -1,0 +1,14 @@
+Question: Explain the behavior of the following. Which, if any, are likley to be incorrect. Why? How would they be resolved?
+
+a) prt != 0 && *prt++
+This is checking if the ptr is not empty and seeing if the value of the object the pointer points to is also not 0.
+This is legal?
+
+b) ival++ && ival
+This is checking the value of ival before being incremented and ival.
+This is effectively checking the same values.
+Its not incorrect but its not particularly helpful.
+
+c) vec[ival++] <= vec[ival]
+Since ival is being postfix incremented, the relation is essentially vec[ival] <= vec[ival] which is always true.
+A prefix increment should be used instead.

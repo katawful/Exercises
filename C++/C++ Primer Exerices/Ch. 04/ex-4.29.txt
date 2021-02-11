@@ -1,0 +1,4 @@
+Predict the output of the following code then run it and explain your reasoning:
+
+int x[10]; int *p x;
+cout << sizeof(

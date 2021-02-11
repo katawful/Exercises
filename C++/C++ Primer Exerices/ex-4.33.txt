@@ -1,0 +1,7 @@
+Explain the following:
+
+(someValue ? ++x, ++y : --x), --y
+
+This code will evaluate the result of ++y, if its non-zero it is true.
+Else it would evaluate the result of --x. 
+--y is always evaluated afterwards.

@@ -1,0 +1,5 @@
+Question: Parentheize the following expression to show how its evaluated. Test by compiling the expression without parentheses and print the result.
+
+((12 / 3) * 4)+(5 * 15)+((24 % 4) / 2)
+This should output 16 + 75 + 0 = 91
+I was correct

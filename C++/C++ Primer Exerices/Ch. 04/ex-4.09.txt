@@ -1,0 +1,6 @@
+Question: Explain the following condition:
+
+const char *cp = "Hello World";
+if (cp && *cp)
+
+This condition is checking if the pointer *cp and the object it points to, cp, exist/have value to them.

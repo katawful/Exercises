@@ -1,0 +1,15 @@
+Explain the following and correct any problems if any:
+
+a) while (string::iterator iter != s.end ()) { /*...*/ }
+This is a while loop that defines the variable iter as a string type then compares it to the output of s.end
+
+b) while (bool status = find(word) )) { /*...*/ }
+	if (!status) { /*...*/ }
+This is a while loop that defines the variable "status", and initializes it with the find(word).
+That variable is then used in an if block outside of the while block.
+That variable is not defined within the scope of the if block.
+To change that, status needs to be defined before the while block:
+
+bool status;
+while (status = find(word)) { /*...*/ }
+	if (!status) { /*...*/ }

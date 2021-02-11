@@ -1,0 +1,14 @@
+Quesiton: What would happen to this while loop if a prefix increment was used?
+
+auto pbeg v.begin();
+while (pbeg != v.end() && *beg >= 0)
+	cout << *pbeg++ << endl;
+
+If a prefix increment were to be used then we wouldn't ever print the value we wanted to.
+Say our vector contains {1,2,3}.
+With the postfix increment we would start the first loop with printing 1 since we used the unchanged value.
+A prefix increment would instead print 2 since we would have printed that changed value from incrementing.
+The first value would be skipped outright.
+It would also try to print values that don't exist inside the vector.
+In the last loop, the postfix increment would post the value of 3.
+However, the prefix increment already posted 3 in the last loop, but it would still try to print a next value.

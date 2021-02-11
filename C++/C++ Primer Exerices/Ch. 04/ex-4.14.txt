@@ -1,0 +1,6 @@
+Question: Explain what happens in each of the if tests.
+
+if (42 = i) // This is illegal. We can't assign a value to a literal since it is an rvalue. This condition can't go forward
+
+if (i = 42) // This condition will assign the value of 42 to i then compare its outcome for if it is true or not. 
+	       As the result is non-zero the condition would be evaluated as true.

@@ -1,0 +1,5 @@
+Explain when the operands are evaluated in logical AND, logical OR, and equality operators:
+
+In logical AND, operands are evaluated left to right. The right value is only evaluated if the left side returns true.
+In logical OR, operands are also evaluated left to right. The right value is only evaluated if the left side returns false.
+In equality operators the left side is evaluated first, converted to a bool if needed.

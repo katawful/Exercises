@@ -1,0 +1,13 @@
+What are the values of i and d after each assignment?
+
+int i; double d;
+
+a) d = i = 3.5
+
+i would be 3 since we are assigning the literal 3.5 and that truncates for type int.
+d would then be 3 as well since we lost data in the truncation.
+
+b) i = d = 3.5
+
+d would be 3.5 since we are assigning 3.5 to it.
+i would then be 3 since we are assigning the value of d (3.5) to it which then gets truncated.

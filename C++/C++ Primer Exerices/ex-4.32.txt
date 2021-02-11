@@ -1,0 +1,10 @@
+Explain this loop:
+
+constexpr int size = 5;
+int ia[size] = {1,2,3,4,5}
+for (int *ptr = ia, ix = 0; ix != size && ptr != ia+size; ++ix, ++ptr)
+	{/*-----*/}
+
+This loop is essentially doing the same thing twice.
+ptr is used to go through an array as a ptr while ix is used to go through the array as an iterator.
+The comma operator will simply finish working as is.

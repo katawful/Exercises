@@ -1,0 +1,1 @@
+If the program using conditionals in 4.22 was left associative then the conditionals would evaluate the condition first then use the result of that to see if something is true or false.
