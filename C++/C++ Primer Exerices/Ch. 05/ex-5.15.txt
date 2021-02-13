@@ -19,4 +19,4 @@ The initialize component needs to be a null statement, add a ; before ix != sz
 c)
 for (int ix = 0; ix != sz; ++ix, ++ sz) {/*...*/}
 
-This loop Iterates 
+This loop never stops iterating since sz will always change when ix changes
