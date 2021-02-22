@@ -1,0 +1,26 @@
+Explain the following loops, correct any problems you detect.
+
+a)
+do
+  int v1, v2;
+  cout << "Please enter two numbers to sum:" ;
+  if (cin >> v1 >> v2)
+    cout << "Sum is: " << v1 + v2 << endl;
+while (cin);
+
+This loop has the user insert two numbers and sums them.
+This never actually can read from 'cin'.
+The do statement is also never contained
+
+b)
+do {
+  //...
+while (int ival = get_response());
+This doesn't work, we cannot declare a variable within the condition.
+
+c)
+do {
+  int ival = get_response();
+} while (ival);
+This is sound.
+It waits until get_response() gives a falsy value
