@@ -1,0 +1,1 @@
+Parameters are the types that the function takes, while the argument is what's passed when the function is called.

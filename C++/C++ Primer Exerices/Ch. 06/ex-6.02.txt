@@ -1,0 +1,18 @@
+a)
+int f() {
+  string s;
+  //...
+  return s;
+}
+This function is not in error, but seemingly does nothing as it has no parameter.
+
+b)
+f2(int i) {/* ... */}
+This function is in error, the function has no type and needs one
+
+c) 
+int calc(int v1, int v1) {/* ... */}
+The parameters have the same name, one needs to be changed
+
+d) double square(double x) return x = x;
+There isn't a function body, there needs to be one
