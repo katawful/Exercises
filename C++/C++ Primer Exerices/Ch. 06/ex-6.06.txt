@@ -1,0 +1,3 @@
+A parameter is an automatic object that exists during the execution of a block, and is created when the function is called.
+A local variable is a variable that is defined during a block. It only exists during the block it is called in.
+A local static variable is a variable that is defined during a block, but exists throughout the program.

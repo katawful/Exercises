@@ -1,0 +1,2 @@
+function void f(T) passes a value of type T to an object for function f
+function void f(T&) passes a reference to the object of T type for the function f
